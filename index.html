@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema6.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/descarga.jpg','imagenes/AP100505126621_0.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>BATALLA DE PUEBLA</h1>
+</div>
+
+<div>
+     <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>HEROES DE LA BATALLA</h2>
+           <p>Se dan a conocer los mas destacados</p>
+       </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>BATALLA DEL 4 DE MAYO</h2>
+        <p>Muetra principio de  la batalla</p>
+       </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>BATALLA DEL 5 DE MAYO</h2>
+         <p>Muestra de comienzo a fin</p>
+       </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>MONUMENTOS DE LA BATALLA</h2>
+           <p>Muestra los mas importantes monumentos</p>
+       </a>
+       </li>
+        <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>CONSECUENCIA</h2>
+           <p>Muestra las consecuencias</p>
+       </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>CONOCER MAS</h2>
+           <p>Muestra links</p>
+       </a>
+       </li>
+      </ul>
+</div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="res/android/mdpi.png" width="89" height="88"/>
+   </div>
+   <div>
+    <h4>Aplicación Seis</h4>
+     <h4>Efrén Ulises Molina Sevilla</h4>
+  </div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>HEROES</h1>
+   </div>
+    <div data-role="content" align="center">
+    <div data-role="collapsible" data-content-theme="false">
+   <h1>Miguel Negrete Novoa</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/miguelo_negrete_heroe.jpg" width="50%"></div>
+    </div>
+      <p><kbd>Fue un militar nacido en Tepeaca, Puebla, que siempre fue fiel a sus ideales y por causa de los mismos, la historia le relegó por muchos años de la posición que merece por sus logros en favor de la patria.
+        
+        De origen humilde, cuando logró posiciones importantes dentro de la milicia, siempre luchó para llevarle justicia a las clases campesinas y los trabajadores urbanos al grado que por ser hijo de campesinos y haber sido también hombre de campo antes de entregarse a las armas, se le considera un precursor agrario de la Revolución Mexicana.
+        
+        Negrete defendió a la nación por primera vez en 1847, cuando tropas estadounidenses invadieron México. El entonces joven, había ingresado al Ejército a los 19 años en 1843, como soldado raso. A pesar de que los invasores tomaron la capital del país, Negrete formó una guerrilla que combatía a las patrullas que vigilaban el Zócalo. </kbd> </p><div data-role="collapsible" data-content-theme="false">
+   <h1>Ignacio Zaragoza</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/220px-Ignacio_Zaragoza.png" width="50%"></div>
+    </div></p>
+    </div>
+    
+  <div align="center"><kbd>Nació en el poblado de La Bahía del Espíritu Santo, en el estado de Coahuila y Texas, hoy Goliad. Fue el segundo hijo de Miguel Zaragoza Valdés, de Veracruz, y María de Jesús Seguin Martínez, de San Antonio de Béxar, esta última pariente de Juan José Erasmo Seguin. Cuando los rebeldes texanos, apoyados por los Estados Unidos de América, ganaron la Guerra de independencia de Texas, Miguel Zaragoza, que era soldado de infantería, se mudó con su familia desde la ciudad Presidio de La Bahía de Espíritu Santo (hoy Goliad, Texas), donde había nacido su hijo Ignacio, a la ciudad de Matamoros en 1834, y posteriormente, en 1844, a la ciudad de Monterrey, donde Ignacio entró al seminario, estudios que abandonó en 1846, convencido de que no tenía vocación sacerdotal. </kbd>
+  </p><div data-role="collapsible" data-content-theme="false">
+   <h1>Porfirio Díaz</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/220px-Porfirio_Diaz_in_uniform.jpg" width="50%"></div>
+    </div></p>
+    </div>
+  <div align="center"><kbd>Fue un militar mexicano,2 que ejerció el cargo de presidente de México en siete ocasiones; la primera, del 24 de noviembre de 1876 al 6 de diciembre de 1876 (después del triunfo de la Revolución de Tuxtepec, desempeñando el cargo de forma interina); y la segunda vez, del 17 de febrero de 1877 al 5 de mayo de 1877. Nuevamente, ejerció el cargo en forma interina del 5 de mayo de 1877 al 30 de noviembre de 1880 (después de haber sido elegido presidente). Posteriormente, ejercería la presidencia del país de manera ininterrumpida entre 1884 y 1911. Fue un Mandatario que se mantuvo en la presidencia durante 35 años algo que un presidente de México nunca había hecho. Antes de asumir la presidencia fue un militar destacado que brilló por su participación en la Segunda Intervención Francesa en México. Combatió en la Batalla de Puebla, el Sitio de Puebla, la Batalla de Miahuatlán y en la Batalla de la Carbonera. </kbd></div>
+</div>
+</div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion Seis,EUMS</h4>
+         </div>
+</div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>BATALLA DEL 4 DE MAYO</h1>
+</div>
+<div data-role="content" align="top">
+<div> 
+  <p><kbd>
+    
+    La Batalla de Atlixco tuvo lugar el 4 de mayo de 1862 en las inmediaciones de la Hacienda de las Traperas en Atlixco en el estado de Puebla, México, entre elementos del ejército mexicano de la república, al mando de los generales Antonio Carvajal y Tomás O'Horan contra las tropas al servicio del Segundo Imperio Mexicano comandadas por el general José María Cobos y de Leonardo Márquez, compuesta de soldados conservadores mexicanos en apoyo de envío de refuerzos para llevar a cabo la Batalla de Puebla, durante la Segunda Intervención Francesa en México.
+    
+    Esta batalla culminó con una victoria republicana y debido a esto el grupo conservador de Márquez no pudo lograr su objetivo de auxiliar a las tropas francesas del Conde de Lorencez en la batalla de Puebla</kbd>.</p><center>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/maxresdefault.jpg',0)"><img src="imagenes/descarga.jpg" alt="batalla" width="60%" id="Image25" align="middle"></a></p></center>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion Seis,EUMS</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>BATALLA DEL 5 DE MAYO</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p><kbd>El Cinco de Mayo, fecha de la conmemoración de la Batalla de Puebla, marca la primera vez que el ejército mexicano pudo derrotar a una potencia extranjera mejor preparada, en este caso los franceses. La batalla tuvo lugar en la actual ciudad de Puebla de Zaragoza el 5 de mayo de 1862, entre los ejércitos de México y Francia.</kbd></p>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','imagenes/AP100505126621_0.jpg',1)"><img src="imagenes/mexico-vs-francia-sub-23-toulon-2016.jpg" width="60%" id="Image27"></a></p>
+  <p><kbd>La primera victoria de México no duró mucho tiempo. Un año después, treinta y cinco mil tropas francesas lograron derrotar al ejército mexicano, y de esa forma Francia logró tomar control de la Ciudad de México e impusieron al austriaco Maximiliano de Habsburgo y su esposa Carlota como emperador y emperatriz de México. El emperador no sostuvo por mucho su imperio: la victoria de Francia duró sólo 3 años. En 1867, y debido a la conflictiva situación en Europa y a la presión de Estados Unidos, el emperador Napoleón III ordenó retirar el apoyo militar y económico a Maximiliano. Al mismo tiempo los republicanos mexicanos comenzaron a recibir respaldo financiero y diplomático estadounidense al concluir en aquel país la Guerra de Secesión, y el novel imperio comenzó a perder su endeble base social. Así las cosas, durante 1866 los republicanos fueron ganando importantes posiciones hasta dejar reducida el área de influencia imperial a Puebla y Veracruz. El 2 de abril de 1867, tropas encabezadas por el juarista Porfirio Díaz tomaron la ciudad de Puebla con lo que militarmente el imperio fue aniquilado. El emperador Maximiliano, para entonces sitiado en Querétaro, fue hecho prisionero y fusilado en la ciudad de Querètaro en "El Cerro de las Campanas".</kbd></p>
+  <p><kbd>Asegurado el paso de Acultzingo, el 2 de mayo de 1862 la columna principal del ejército expedicionario francés salió de San Agustín del Palmar, en Veracruz, para cruzar la Sierra Madre Oriental y dirigirse hacia Puebla, paso obligado para llegar a la capital del país y que era además uno de los bastiones del Partido Conservador, donde esperaban ser recibidos "con una lluvia de rosas", como le aseguró Saligny a Napoleón III en una carta.<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/descarga.jpg',1)"><img src="imagenes/cincodemayoposter.jpeg" alt="batalla" width="60%" id="Image26"></a> </kbd></p></center>
+  <p><kbd>El de mayo por la noche, el general Zaragoza arribó a Puebla, dejando en su retaguardia una brigada de caballería para hostigar a los invasores. Los efectivos del Ejército de Oriente se organizaron por las calles desiertas de la ciudad, ya que la mayoría de la población era partidaria de la invasión.
+    Zaragoza estableció su cuartel a unos cuantos metros de la línea de batalla, donde estableció el plan para la defensa de la plaza (ver tabla superior), que consistió en concentrar los pertrechos en el sur y oriente de la ciudad, esperando evitar que los franceses alcanzaran al área urbana de Puebla.</kbd></p>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Apliacion Seis, EUMS</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a" >
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>MONUMENTOS DE LA BATALLA</h1>
+</div>
+<div data-role="content" align="center">
+<div><center>
+ <kbd>Es toda obra con suficiente valor para el grupo humano que lo erigió. Ha de ser "pública y patente". Aunque inicialmente el término se aplicaba a las estatuas, inscripciones o sepulcros erigidas en memoria de un personaje o de un acontecimiento relevante (monumento conmemorativo), su uso fue extendiéndose y ha llegado a comprender cualquier construcción que posea valor "artístico, arqueológico, histórico" o similar, destacadamente las arquitectónicas que, enclavadas en un núcleo urbano o aisladas en el medio rural, cumplen la función de hito por su visibilidad y se convierten en símbolos de ese lugar.
+ </kbd>
+ <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/1280pxmonumento_a_san_martn_batalla_de_salta_ebarlein.jpg" alt="1280px-Monumento_a_San_Martín_Batalla_de_Salta_Ebarlein" title="1280px-Monumento_a_San_Martín_Batalla_de_Salta_Ebarlein" id="wows1_0"/></li>
+		<li><img src="data1/images/3429007.jpg" alt="3429007" title="3429007" id="wows1_1"/></li>
+		<li><img src="data1/images/109028006.jpg" alt="109028006" title="109028006" id="wows1_2"/></li>
+		<li><img src="data1/images/battle_of_ccuta_canon.jpg" alt="Battle_of_Cúcuta_(canon)" title="Battle_of_Cúcuta_(canon)" id="wows1_3"/></li>
+		<li><img src="data1/images/dsc_0532.jpg" alt="DSC_0532" title="DSC_0532" id="wows1_4"/></li>
+		<li><img src="data1/images/images_1.jpg" alt="images (1)" title="images (1)" id="wows1_5"/></li>
+		<li><img src="data1/images/images_2.jpg" alt="images (2)" title="images (2)" id="wows1_6"/></li>
+		<li><img src="data1/images/images_3.jpg" alt="images (3)" title="images (3)" id="wows1_7"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/images.jpg" alt="wowslider" title="images" id="wows1_8"/></a></li>
+		<li><img src="data1/images/p1020085.jpg" alt="P1020085" title="P1020085" id="wows1_9"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="1280px-Monumento_a_San_Martín_Batalla_de_Salta_Ebarlein"><span><img src="data1/tooltips/1280pxmonumento_a_san_martn_batalla_de_salta_ebarlein.jpg" alt="1280px-Monumento_a_San_Martín_Batalla_de_Salta_Ebarlein"/>1</span></a>
+		<a href="#" title="3429007"><span><img src="data1/tooltips/3429007.jpg" alt="3429007"/>2</span></a>
+		<a href="#" title="109028006"><span><img src="data1/tooltips/109028006.jpg" alt="109028006"/>3</span></a>
+		<a href="#" title="Battle_of_Cúcuta_(canon)"><span><img src="data1/tooltips/battle_of_ccuta_canon.jpg" alt="Battle_of_Cúcuta_(canon)"/>4</span></a>
+		<a href="#" title="DSC_0532"><span><img src="data1/tooltips/dsc_0532.jpg" alt="DSC_0532"/>5</span></a>
+		<a href="#" title="images (1)"><span><img src="data1/tooltips/images_1.jpg" alt="images (1)"/>6</span></a>
+		<a href="#" title="images (2)"><span><img src="data1/tooltips/images_2.jpg" alt="images (2)"/>7</span></a>
+		<a href="#" title="images (3)"><span><img src="data1/tooltips/images_3.jpg" alt="images (3)"/>8</span></a>
+		<a href="#" title="images"><span><img src="data1/tooltips/images.jpg" alt="images"/>9</span></a>
+		<a href="#" title="P1020085"><span><img src="data1/tooltips/p1020085.jpg" alt="P1020085"/>10</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section --></center>
+</div></div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Apliacion Seis,EUMS</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a" >
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>CONSECUENCIAS</h1>
+</div>
+<div data-role="content" align="center">
+<div><center>
+  <p><kbd>Mientras se libraba la batalla, en el Palacio Nacional y en la Ciudad de México en general se vivía un ambiente de tensa espera. Lo último que se sabía de Puebla era el telegrama enviado por Zaragoza hacia las 12:30 del día, en el que avisaba que el fuego de artillería de ambos lados había iniciado. Luego, silencio. Ante la incertidumbre, el gobierno había hecho salir precipitadamente al general Florencio Antillón al mando de los Batallones de Guanajuato, quedando como guardianes de la capital sólo 2,000 hombres del Regimiento de Coraceros Capitalinos y algunos centenares de milicianos pobremente armados. Si las tropas guanajuatenses se perdían, la capital quedaría desprotegida. </kbd></p>
+       <p><kbd>El saldo final de la batalla fue de 476 muertos y 345 heridos del lado francés, así como 83 muertos, cerca de 131 heridos y 12 desaparecidos para el Ejército de Oriente. A las 7 de la noche del día 6 de mayo arribaron a Puebla el general Antillón y sus tropas; Zaragoza esperaba un nuevo ataque de Lorencez, pero éste, el día 8 de mayo, dispuso la retirada hasta San Agustín del Palmar, siendo "saludado" por la artillería republicana y la Banda de Guerra de los Carabineros, quienes tocaron "Escape".</kbd> <div data-role="controlgroup" data-type="horizontal">
+    <a href="http://www.paxala.com/la-batalla-de-puebla/" class="ui-btn ui-corner-all">ACERCA DE</a></p>
+</div>
+
+ </center>
+</div></div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Apliacion Seis,EUMS</h4>
+</div>
+</div>
+</div>
+
+       
+     
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a" >
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>CONOCER MAS DE PUEBLA</h1>
+</div>
+<div data-role="content" align="center">
+<div><center>
+  <div data-role="controlgroup" data-type="horizontal">
+    <a href="http://turismo.puebla.gob.mx/" class="ui-btn ui-corner-all">Secretaría de Turismo</a>
+    <a href="https://www.elsoldemexico.com.mx/mexico/sociedad-mex/654674-que-se-celebra-el-5-de-mayo-y-por-que-es-tan-significativo" class="ui-btn ui-corner-all">EL SOL DE PUEBLA</a>
+     <a href="https://www.elsoldepuebla.com.mx/estado/desfilan-para-conmemorar-la-batalla-del-4-de-mayo-de-1862-en-atlixco" class="ui-btn ui-corner-all">4 mayo en Atlixco</a><strong></strong>
+</div>
+
+ </center>
+</div></div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Apliacion Seis,EUMS</h4>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
