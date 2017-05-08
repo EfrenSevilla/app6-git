@@ -5,10 +5,10 @@
  id ="com.phonegap.example6"
  version ="1.0.0">
  
-  <name> app6 Batalla de Puebla </name>
+  <name> app6 BATALLA DE PUEBLA </name>
   
   <description>
-   Aplicacion de Informacion de la batalla de Puebla
+   Aplicacion que muestra informacion de la batalla de Puebla
   </description>
   
   <author href="https://build.phonegap.com" email="efrenmolina8@gmail.com">
